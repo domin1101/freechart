@@ -8,4 +8,4 @@ set(wxWidgets_CONFIGURATION mswu)
 find_package(wxWidgets COMPONENTS core base REQUIRED)
 include(${wxWidgets_USE_FILE})
 
-add_library(freechart STATIC ${SOURCES})
+add_library(freechart ${SOURCES})
