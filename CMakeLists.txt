@@ -9,3 +9,4 @@ find_package(wxWidgets COMPONENTS core base adv html aui REQUIRED)
 include(${wxWidgets_USE_FILE})
 
 add_library(freechart ${SOURCES})
+target_link_libraries(freechart ${wxWidgets_LIBRARIES})
