@@ -10,3 +10,5 @@ include(${wxWidgets_USE_FILE})
 
 add_library(freechart ${SOURCES})
 target_link_libraries(freechart ${wxWidgets_LIBRARIES})
+install(TARGETS freechart DESTINATION lib)
+install(DIRECTORY include DESTINATION include)
